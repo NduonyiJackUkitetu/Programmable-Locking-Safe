@@ -1,24 +1,3 @@
-----------------------------------------------------------------------------------
--- Company: ENGS 31
--- Engineer: Phil Butler and Miles Bock
---
--- Create Date: 08/09/2018 07:38:33 PM
--- Design Name:
--- Module Name: compare - Behavioral
--- Project Name: Final Project - Combinational Lock
--- Target Devices: Digilent Basys 3 board (Artix 7)
--- Tool versions: Vivado 2017.3
--- Description: Shift register which can load a main and temp code register -- with its current value and compare it to the master and temp code to
--- produce an unlock or reprogram signal.
--- Dependencies:
---
--- Revision:
--- Revision 0.01 - File Created
--- Revision 1.00 - Added delay timer to fix timing bug
--- Revision 2.00 - Allowed variable delay for delay timer
--- Additional Comments:
---
-----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
