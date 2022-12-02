@@ -1,24 +1,3 @@
-----------------------------------------------------------------------------------
--- Company: ENGS 31
--- Engineer: Miles Bock & Phil Butler
---
--- Create Date: 08/14/2018 02:58:46 PM
--- Design Name:
--- Module Name: keypad_decoder - Behavioral
--- Project Name: Final Project - Combinational Lock
--- Target Devices: Basys 3 / Artyx 7
--- Tool Versions: Vivado 2017.3
--- Description: Decoder used to sequentially drive low signals to the -- keypad's columns and for each signal to sequentially read the -- corresponding low-High output from the keypad's rows
---
--- Dependencies: debouncer.vhdl
---
--- Revision:
--- Revision 0.01 - File Created
--- Revision 1.00 - Moved digit decode statements inside dec_driver process
--- changed cclk to a take_sample process
--- Additional Comments:
---
-----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
