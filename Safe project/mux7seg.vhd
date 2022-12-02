@@ -1,23 +1,3 @@
-----------------------------------------------------------------------------------
--- Company: ENGS 31
--- Engineer: Prof. Hansen, adapted by Miles Bock AND Phil Butler
---
--- Create Date: 8/20/2018
--- Design Name:
--- Module Name: mux7seg - Behavioral
--- Project Name: Final Project - Combinational Lock
--- Target Devices: Digilent Basys 3 board (Artix 7)
--- Tool versions: Vivado 2017.3
--- Description: Multiplexed seven-segment decoder for the display on -- the Basys3
---
--- Dependencies:
---
--- Revision:
--- Revision 0.01 - File Created
--- Revision 1.00 - Fixed Clock Issues - lowered NCLKDIV and eliminated dclk -- from top level
--- Additional Comments:
---
-----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use ieee.numeric_std.all;
