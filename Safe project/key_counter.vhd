@@ -1,22 +1,3 @@
-----------------------------------------------------------------------------------
--- Company: ENGS 31
--- Engineer: Miles Bock & Phil Butler
---
--- Create Date: 08/09/2018 08:53:19 PM
--- Design Name:
--- Module Name: key_counter - Behavioral
--- Project Name: Final Project - Combinational Lock
--- Target Devices: basys3
--- Tool Versions: Vivado 2017.3
--- Description: 3bit counter for counting key inputs and sending TC signal -- after five key presses detected
---
--- Dependencies: None
---
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
---
-----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
