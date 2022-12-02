@@ -1,28 +1,3 @@
-----------------------------------------------------------------------------------
--- Company: ENGS 31
--- Engineer: Phil Butler and Miles Bock
---
--- Create Date: 08/14/2018 04:11:51 PM
--- Design Name:
--- Module Name: controller - Behavioral
--- Project Name: Final Project - Combinational Lock
--- Target Devices: Digilent Basys 3 board (Artix 7)
--- Tool versions: Vivado 2017.3
--- Description: Controls the state of the program and produces signals which
--- come from the controller.
---
--- Dependencies:
---
--- Revision:
--- Revision 0.01 - File Created
--- Revision 1.00 - Added pre-m state to deal with timing issue
--- Revision 2.00 - Removed pre-m state and fixed timing issue with delay -- timer in compare
--- Revision 3.00 - Edited change-of-state behavior for unlock and failure, -- now it uses same variable delay timer to hold lock/failure for a second
--- before going back to idle.
---
--- Additional Comments:
---
-----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 entity controller is
@@ -128,7 +103,7 @@ UNLOCK <= '1';
 LOCK <= '0';
 delay_CE <= '1';
 delay_CLR <= '0';
-if delay_TC = '1' then -- hold unlock for roughly 2 sec
+if delay_TC = '1' then -- hold unlock for roughly 2 min
 next_state <= idle;
 end if;
 when failure =>
@@ -136,7 +111,7 @@ m_CLR <= '1';
 FAIL <= '1';
 delay_CE <= '1';
 delay_CLR <= '0';
-if delay_TC = '1' then -- hold failure for roughly 2 sec
+if delay_TC = '1' then -- hold failure for roughly 2 min
 next_state <= idle;
 end if;
 when reprogram =>
