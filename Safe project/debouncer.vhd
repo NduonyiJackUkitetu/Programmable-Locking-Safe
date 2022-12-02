@@ -1,22 +1,3 @@
-----------------------------------------------------------------------------------
--- Company: ENGS 31
--- Engineer: Miles Bock & Phil Butler
---
--- Create Date: 08/17/2018 01:05:04 PM
--- Design Name:
--- Module Name: debouncer - Behavioral
--- Project Name: Final Project - Combinational Lock
--- Target Devices: basys3/artyx7
--- Tool Versions: Vivado 2017.3
--- Description: debounce component to be used in keypad decoder to -- eliminate switch bouncing
---
--- Dependencies:
---
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
---
-----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
