@@ -1,24 +1,3 @@
-----------------------------------------------------------------------------------
--- Company: ENGS 31
--- Engineer: Phil Butler and Miles Bock
---
--- Create Date: 08/20/2018
--- Design Name:
--- Module Name: toplevel behavioral
--- Project Name: Final Project - Combinational Lock
--- Target Devices: Digilent Basys 3 Board (Artix 7)
--- Tool versions: Vivado 2017.3
--- Description: shell code for the project connecting all components, headers,
--- LEDs and producing clock signals for the components
---
--- Dependencies: compare.vhd, mux7seg.vhd, key_counter.vhd, controller.vhd, keypad_decoder.vhd
--- Revision:
--- Revision 0.01 - File Created
--- Revision 1.00 - Added separate display clock
--- Revision 2.00 - Removed separate display clock, changed internal clock divider in mux7seg
--- Additional Comments:
---
-----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.numeric_std.ALL; -- needed for arithmetic
